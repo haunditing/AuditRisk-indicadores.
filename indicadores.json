@@ -8,12 +8,46 @@
   },
 
   "indicadoresMeta": {
-    "liquidez": { "esPorcentaje": false, "riesgoPorExceso": true },
-    "endeudamiento": { "esPorcentaje": true, "riesgoPorExceso": true },
-    "rentabilidad": { "esPorcentaje": true, "riesgoPorExceso": false },
-    "ROA": { "esPorcentaje": true, "riesgoPorExceso": false },
-    "ROE": { "esPorcentaje": true, "riesgoPorExceso": false },
-    "coberturaDeuda": { "esPorcentaje": false, "riesgoPorExceso": true }
+    "liquidez": {
+      "esPorcentaje": false,
+      "nombre": "Razón Corriente",
+      "descripcion": "Mide la capacidad de la empresa para cubrir sus deudas de corto plazo con los activos corrientes. Un valor adecuado indica estabilidad operativa y manejo saludable del capital de trabajo."
+    },
+    "endeudamiento": {
+      "esPorcentaje": true,
+      "nombre": "Índice de Endeudamiento",
+      "descripcion": "Refleja qué proporción de los activos totales está financiada con deuda. Un nivel alto puede aumentar el riesgo financiero, mientras que uno bajo puede significar baja exposición pero también poco aprovechamiento del apalancamiento."
+    },
+    "margenNeto": {
+      "esPorcentaje": true,
+      "nombre": "Margen Neto",
+      "descripcion": "Indica el porcentaje de las ventas que se convierten en utilidad neta después de restar todos los gastos e impuestos. Es una medida clave de eficiencia y rentabilidad general de la empresa."
+    },
+    "ROA": {
+      "esPorcentaje": true,
+      "nombre": "Retorno sobre Activos (ROA)",
+      "descripcion": "Evalúa la eficiencia con que la empresa utiliza sus activos para generar utilidades. Un ROA alto implica que los activos están siendo productivos y bien gestionados."
+    },
+    "ROE": {
+      "esPorcentaje": true,
+      "nombre": "Retorno sobre Patrimonio (ROE)",
+      "descripcion": "Mide la rentabilidad obtenida por los accionistas sobre el capital invertido. Es un indicador clave para evaluar la capacidad de generar valor para los dueños de la empresa."
+    },
+    "coberturaDeuda": {
+      "esPorcentaje": false,
+      "nombre": "Cobertura de Deuda",
+      "descripcion": "Relaciona las utilidades con los gastos financieros, mostrando cuántas veces las utilidades cubren el pago de intereses. Una cobertura amplia indica menor riesgo de incumplimiento."
+    },
+    "autofinanciamiento": {
+      "esPorcentaje": false,
+      "nombre": "Capacidad de Autofinanciamiento",
+      "descripcion": "Evalúa si la empresa genera recursos internos suficientes para sostener sus operaciones e inversiones sin depender excesivamente de financiamiento externo."
+    },
+    "puntajeGlobal": {
+      "esPorcentaje": false,
+      "nombre": "Puntaje Global de Riesgo",
+      "descripcion": "Es una métrica integral que resume el nivel de riesgo financiero de la empresa considerando liquidez, endeudamiento y rentabilidad. Se expresa en una escala de 0 (crítico) a 100 (sólido)."
+    }
   },
 
   "tiposEmpresa": [
