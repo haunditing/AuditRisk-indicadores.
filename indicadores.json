@@ -18,7 +18,7 @@
       "nombre": "Índice de Endeudamiento",
       "descripcion": "Refleja qué proporción de los activos totales está financiada con deuda. Un nivel alto puede aumentar el riesgo financiero, mientras que uno bajo puede significar baja exposición pero también poco aprovechamiento del apalancamiento."
     },
-    "margenNeto": {
+    "rentabilidad": {
       "esPorcentaje": true,
       "nombre": "Margen Neto",
       "descripcion": "Indica el porcentaje de las ventas que se convierten en utilidad neta después de restar todos los gastos e impuestos. Es una medida clave de eficiencia y rentabilidad general de la empresa."
@@ -215,3 +215,4 @@
     }
   ]
 }
+
