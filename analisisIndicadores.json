@@ -1,0 +1,266 @@
+{
+  "generico": {
+    "liquidez": {
+      "bajo": "Excelente liquidez. La empresa puede cubrir holgadamente sus deudas de corto plazo con los activos disponibles. Este nivel brinda seguridad financiera y flexibilidad para enfrentar contingencias. Claves de revisión: verificar si el exceso de liquidez no implica ineficiencia en la utilización de recursos ociosos.",
+      "medio": "Liquidez aceptable. La empresa cubre sus pasivos corrientes, pero con un margen ajustado. Claves de revisión: evaluar la rotación de cuentas por cobrar e inventarios para asegurar que no se generen cuellos de liquidez en ciclos de operación.",
+      "alto": "Riesgo de liquidez. Los activos corrientes no alcanzan para cubrir los pasivos corrientes. Esto podría reflejar problemas de gestión del capital de trabajo. Claves de revisión: analizar políticas de crédito, plazos de pago y velocidad de conversión de inventarios en efectivo."
+    },
+    "pruebaAcida": {
+      "bajo": "Muy buena capacidad de pago inmediato. Incluso sin considerar inventarios, la empresa puede atender sus pasivos corrientes. Claves de revisión: confirmar calidad de cuentas por cobrar y su recuperabilidad.",
+      "medio": "Cobertura razonable, pero con dependencia de inventarios para cumplir obligaciones. Claves de revisión: revisar composición de inventarios y su liquidez real.",
+      "alto": "Riesgo de liquidez inmediata. Sin inventarios, los activos líquidos no son suficientes para cubrir deudas de corto plazo. Claves de revisión: analizar la dependencia de financiamiento externo o la posibilidad de iliquidez ante caídas de ventas."
+    },
+    "deudaActivo": {
+      "bajo": "Nivel de endeudamiento bajo. La empresa depende principalmente de recursos propios. Claves de revisión: confirmar que no exista un subaprovechamiento de financiamiento barato que limite crecimiento.",
+      "medio": "Endeudamiento moderado, la empresa equilibra deuda y activos propios. Claves de revisión: monitorear la capacidad de generación de flujo para evitar incrementos descontrolados de deuda.",
+      "alto": "Endeudamiento alto. Gran parte de los activos está financiada con deuda, lo que aumenta el riesgo financiero. Claves de revisión: verificar condiciones de la deuda, tasas de interés y exposición al riesgo de refinanciación."
+    },
+    "deudaPatrimonio": {
+      "bajo": "Estructura sólida. Los recursos propios superan significativamente las deudas. Claves de revisión: confirmar eficiencia en el uso del patrimonio para no limitar el apalancamiento positivo.",
+      "medio": "Relación deuda/patrimonio equilibrada, aunque podría tensionarse si aumentan los gastos financieros. Claves de revisión: revisar proyecciones de pago de deuda y planes de inversión.",
+      "alto": "Exceso de deuda respecto al patrimonio. Esto implica alta exposición financiera y riesgo de insolvencia. Claves de revisión: evaluar sostenibilidad de dividendos, covenants financieros y capacidad de negociación con acreedores."
+    },
+    "rentabilidad": {
+      "bajo": "Rentabilidad neta sólida, indica control de costos y buena eficiencia operativa. Claves de revisión: comparar con empresas del sector para confirmar ventaja competitiva.",
+      "medio": "Rentabilidad aceptable pero vulnerable a variaciones de costos o ingresos. Claves de revisión: monitorear márgenes brutos y gastos administrativos.",
+      "alto": "Rentabilidad baja, evidencia presión en costos o precios de venta. Claves de revisión: analizar estructura de costos, eficiencia operativa y riesgos en la estrategia comercial."
+    },
+    "ROA": {
+      "bajo": "Buen retorno sobre activos. La empresa utiliza eficientemente sus recursos para generar utilidades. Claves de revisión: validar que la rentabilidad provenga de operaciones recurrentes y no de ingresos extraordinarios.",
+      "medio": "Retorno aceptable, pero con margen de mejora en el uso de activos. Claves de revisión: revisar rotación de activos fijos y eficiencia en capital de trabajo.",
+      "alto": "Retorno bajo. La empresa no logra generar utilidades suficientes con los recursos disponibles. Claves de revisión: analizar productividad de activos, proyectos de inversión y obsolescencia tecnológica."
+    },
+    "ROE": {
+      "bajo": "Excelente retorno para los accionistas. Indica una gestión eficiente del patrimonio. Claves de revisión: asegurar que el retorno no dependa exclusivamente de apalancamiento excesivo.",
+      "medio": "Retorno aceptable, en línea con la rentabilidad del mercado. Claves de revisión: evaluar consistencia en la generación de utilidades y sostenibilidad del nivel actual.",
+      "alto": "Retorno bajo para los accionistas. Claves de revisión: revisar política de dividendos, reinversión de utilidades y efecto de la deuda sobre el capital propio."
+    },
+    "coberturaDeuda": {
+      "bajo": "Cobertura amplia de gastos financieros. La empresa tiene margen para enfrentar mayores costos de deuda. Claves de revisión: confirmar estabilidad del flujo operativo que respalda esta cobertura.",
+      "medio": "Cobertura suficiente, pero ajustada. Un descenso en utilidades podría comprometer el pago de intereses. Claves de revisión: proyectar sensibilidad ante variaciones de ingresos o tasas de interés.",
+      "alto": "Cobertura insuficiente. Riesgo alto de incumplimiento de obligaciones financieras. Claves de revisión: revisar alternativas de refinanciación, reducción de deuda o inyección de capital."
+    },
+    "autofinanciamiento": {
+      "positivo": "La empresa genera recursos propios suficientes para financiar operaciones e inversiones sin depender de endeudamiento adicional. Claves de revisión: validar sostenibilidad del flujo y control de gastos.",
+      "negativo": "No se generan recursos propios suficientes, lo que aumenta la dependencia del crédito externo. Claves de revisión: analizar origen de déficits, evaluar eficiencia en gastos y revisar estrategias de inversión."
+    },
+    "puntajeGlobal": "El puntaje global refleja el nivel integral de riesgo financiero (0 = crítico, 100 = sólido). Claves de revisión: contextualizar el score con el sector y tendencias históricas.",
+    "resumen": {
+      "liquidezBaja": "La liquidez es baja y puede comprometer la operatividad.",
+      "endeudamientoAlto": "El nivel de endeudamiento es alto, lo que incrementa la exposición financiera.",
+      "rentabilidadBaja": "La rentabilidad neta es baja en relación con los ingresos.",
+      "scoreBajo": "El puntaje global indica riesgos significativos para la sostenibilidad.",
+      "sinRiesgos": "No se detectan riesgos financieros relevantes en este análisis."
+    }
+  },
+  "comercial_servicios": {
+    "liquidez": {
+      "bajo": "Liquidez elevada que garantiza una sólida capacidad para atender compromisos de corto plazo sin necesidad de financiamiento adicional. Este nivel refleja seguridad financiera y capacidad para aprovechar oportunidades de inversión o negociación con proveedores. Claves de revisión: validar que el exceso de recursos líquidos no represente una ineficiencia en la utilización de capital que podría destinarse a expansión o reducción de pasivos.",
+      "medio": "Liquidez en un rango aceptable, suficiente para cubrir pasivos corrientes y sostener la operación en condiciones normales. Este nivel otorga confianza operativa, pero puede ser sensible a cambios en la rotación de inventarios o cuentas por cobrar. Claves de revisión: revisar la calidad de la cartera, los plazos de pago a proveedores y el ciclo de conversión de efectivo para garantizar continuidad.",
+      " alto": "Liquidez insuficiente. Los activos corrientes no alcanzan a cubrir los pasivos de corto plazo, lo que expone a la empresa a un riesgo de iliquidez operativa. Esto puede obligar a depender de financiamiento externo o deteriorar la relación con proveedores. Claves de revisión: analizar políticas de crédito, dependencia de líneas de financiamiento, capacidad de negociación y plan de contingencia de caja."
+    },
+    "endeudamiento": {
+      "bajo": "Nivel de endeudamiento bajo que refleja una estructura conservadora con predominio de recursos propios. Este escenario disminuye el riesgo financiero y asegura autonomía operativa. Claves de revisión: verificar que la baja deuda no limite oportunidades de crecimiento o acceso a apalancamiento positivo.",
+      "medio": "Endeudamiento moderado que mantiene equilibrio entre capital propio y deuda. Este nivel es sostenible siempre que el flujo operativo respalde el servicio de deuda. Claves de revisión: analizar proyecciones de flujo de caja, sensibilidad ante aumentos en tasas de interés y estructura de vencimientos.",
+      "alto": "Nivel alto de endeudamiento que incrementa la exposición financiera y puede comprometer la estabilidad en escenarios adversos. El peso de la deuda reduce flexibilidad estratégica y eleva riesgo de refinanciación. Claves de revisión: revisar condiciones contractuales de deuda, cumplimiento de covenants, y evaluar alternativas de reestructuración o reducción del apalancamiento."
+    },
+    "rentabilidad": {
+      "bajo": "Rentabilidad neta sólida, superior al promedio del sector, que refleja eficiencia en la gestión de costos y políticas de precios acertadas. Este nivel constituye una ventaja competitiva y fortalece la resiliencia financiera. Claves de revisión: confirmar que la rentabilidad proviene de operaciones recurrentes y no de ingresos extraordinarios.",
+      "medio": "Margen neto aceptable, aunque expuesto a variaciones por incremento de costos de operación o presiones competitivas en precios. Este nivel permite sostener operaciones, pero limita capacidad de inversión a largo plazo. Claves de revisión: monitorear estructura de costos, márgenes brutos y eficiencia administrativa.",
+      "alto": "Margen neto bajo, por debajo de referencias sectoriales, lo que indica debilidad en eficiencia operativa o presión en la estrategia comercial. Esto puede afectar la sostenibilidad del negocio. Claves de revisión: analizar estrategia de precios, renegociar costos críticos y revisar productividad en áreas clave."
+    },
+    "ROA": {
+      "bajo": "Alto retorno sobre activos que demuestra eficiencia en la utilización de los recursos disponibles para generar utilidades. Este desempeño refleja fortaleza operativa y capacidad para maximizar inversiones. Claves de revisión: validar que la rentabilidad sea sostenible en el tiempo y no dependa de operaciones extraordinarias.",
+      "medio": "Retorno sobre activos aceptable, aunque con margen de mejora en eficiencia y productividad de los activos. Este nivel sugiere una gestión estable pero no óptima. Claves de revisión: revisar la rotación de activos fijos, eficiencia en capital de trabajo y proyectos de inversión en curso.",
+      "alto": "Retorno sobre activos bajo, lo que refleja una utilización ineficiente de los recursos. Este nivel puede comprometer la sostenibilidad de la empresa si persiste en el tiempo. Claves de revisión: evaluar obsolescencia de activos, decisiones de inversión y políticas de mantenimiento."
+    },
+    "ROE": {
+      "bajo": "Excelente retorno para accionistas que indica un uso eficiente del patrimonio y genera valor sostenido. Este nivel posiciona a la empresa como atractiva para inversionistas. Claves de revisión: asegurar que el retorno no dependa exclusivamente de un nivel de deuda alto que incremente el riesgo financiero.",
+      "medio": "Retorno sobre patrimonio en línea con referencias del sector. Este desempeño asegura estabilidad, aunque con margen de mejora en eficiencia operativa y estructura de financiamiento. Claves de revisión: evaluar consistencia en generación de utilidades, política de dividendos y reinversión.",
+      "alto": "Retorno bajo para accionistas que refleja bajo aprovechamiento del capital propio. Este escenario reduce atractivo para inversionistas y puede comprometer crecimiento a futuro. Claves de revisión: revisar estructura de capital, sostenibilidad de dividendos y estrategias de mejora en la rentabilidad."
+    },
+    "puntajeGlobal": "El puntaje global refleja el nivel integral de riesgo financiero en empresas comerciales y de servicios (0 = crítico, 100 = sólido). Un puntaje alto indica solidez operativa, liquidez estable y rentabilidad en línea con el sector, mientras que un puntaje bajo revela vulnerabilidad frente a iliquidez, endeudamiento excesivo o márgenes deteriorados.",
+    "resumen": {
+      "liquidezBaja": "La liquidez es insuficiente y expone a la empresa a dificultades para atender compromisos inmediatos, especialmente en contextos de baja rotación de inventarios o ventas estacionales.",
+      "endeudamientoAlto": "El alto nivel de endeudamiento aumenta la exposición a cambios en las condiciones de financiamiento, lo que puede comprometer la estabilidad y limitar la flexibilidad estratégica.",
+      "rentabilidadBaja": "La rentabilidad neta se encuentra por debajo del promedio sectorial, lo que refleja problemas de eficiencia o debilidad en la estrategia de mercado.",
+      "scoreBajo": "El puntaje global refleja un nivel de riesgo elevado para la sostenibilidad del negocio, con vulnerabilidades que requieren atención inmediata.",
+      "sinRiesgos": "No se detectan riesgos financieros relevantes. La empresa presenta liquidez adecuada, endeudamiento controlado y rentabilidad sostenible."
+    }
+  },
+  "manufactura": {
+    "liquidez": {
+      "bajo": "Nivel de liquidez elevado que refleja capacidad holgada para cubrir obligaciones de corto plazo. Este escenario brinda seguridad financiera y flexibilidad operativa, pero puede evidenciar capital de trabajo ocioso en inventarios o cuentas por cobrar. Claves de revisión: analizar eficiencia en la gestión de inventarios y confirmar que los excesos de liquidez no afecten la rentabilidad del capital invertido.",
+      "medio": "Liquidez en rango adecuado para sostener las operaciones de manufactura, caracterizadas por ciclos largos de producción y rotación de inventarios. Este nivel asegura la continuidad de la operación en condiciones normales. Claves de revisión: verificar la política de abastecimiento, la rotación de inventarios y la sincronización de pagos a proveedores con ingresos de ventas.",
+      "alto": "Liquidez insuficiente que compromete la capacidad de atender pasivos corrientes, especialmente en un sector con alta dependencia de materias primas y ciclos de producción intensivos en capital. Esto aumenta el riesgo de interrupción de la cadena de suministro. Claves de revisión: evaluar dependencia de financiamiento de corto plazo, identificar cuellos de botella en la cobranza y revisar niveles de inventario."
+    },
+    "endeudamiento": {
+      "bajo": "Nivel bajo de endeudamiento que reduce la exposición a riesgos financieros y permite autonomía operativa. Sin embargo, podría reflejar un desaprovechamiento de financiamiento a bajo costo para proyectos de expansión o modernización tecnológica. Claves de revisión: evaluar el costo de oportunidad de no apalancar inversiones estratégicas.",
+      "medio": "Nivel moderado de endeudamiento que mantiene equilibrio entre deuda y patrimonio. Este nivel es sostenible si los flujos de caja operativos son consistentes. Claves de revisión: revisar estructura de vencimientos de deuda, sensibilidad ante aumentos en tasas de interés y capacidad de cobertura de gastos financieros.",
+      "alto": "Nivel alto de endeudamiento que incrementa el riesgo de tensión financiera y reduce la flexibilidad de la empresa frente a ciclos económicos adversos. Claves de revisión: analizar la exposición a deuda en moneda extranjera, condiciones contractuales y riesgo de refinanciación."
+    },
+    "rentabilidad": {
+      "bajo": "Margen neto elevado que refleja eficiencia operativa, control de costos y una adecuada estructura de precios. Este nivel otorga fortaleza en un sector donde los márgenes suelen ser estrechos. Claves de revisión: verificar si este desempeño es sostenible y no depende de coyunturas temporales en costos de insumos.",
+      "medio": "Rentabilidad aceptable, pero susceptible a variaciones en costos de materias primas, logística o mano de obra. Claves de revisión: analizar contratos de suministro, políticas de precios y eficiencia en procesos productivos.",
+      "alto": "Margen neto bajo que indica dificultades en la gestión de costos o presión competitiva en precios de venta. Este escenario debilita la capacidad de reinversión y sostenibilidad a largo plazo. Claves de revisión: revisar estructura de costos, renegociar contratos de insumos y evaluar eficiencia energética y tecnológica."
+    },
+    "ROA": {
+      "bajo": "Alto retorno sobre activos que refleja un uso eficiente de la infraestructura productiva y de los recursos invertidos. Este desempeño es señal de fortaleza competitiva y resiliencia frente a ciclos económicos. Claves de revisión: confirmar que la rentabilidad se origine en operaciones recurrentes y no en resultados extraordinarios.",
+      "medio": "Retorno aceptable que indica productividad moderada de los activos. Claves de revisión: analizar rotación de maquinaria, capacidad instalada utilizada y eficiencia en capital de trabajo.",
+      "alto": "Bajo retorno sobre activos que refleja ineficiencia en la gestión de recursos, posible subutilización de capacidad instalada o inversiones improductivas. Claves de revisión: evaluar obsolescencia tecnológica, productividad laboral y proyectos de inversión no rentables."
+    },
+    "ROE": {
+      "bajo": "Excelente retorno sobre patrimonio que refleja gestión eficiente y creación de valor para accionistas. Este nivel es atractivo y fortalece la posición financiera. Claves de revisión: validar que el resultado no dependa exclusivamente de altos niveles de endeudamiento.",
+      "medio": "Retorno en línea con referencias sectoriales, adecuado para mantener confianza de inversionistas. Claves de revisión: revisar consistencia de resultados, políticas de dividendos y reinversión.",
+      "alto": "Bajo retorno sobre patrimonio que refleja limitaciones en la rentabilidad de las operaciones o ineficiencia en la gestión del capital propio. Claves de revisión: analizar estructura de capital, sostenibilidad de dividendos y estrategias de productividad."
+    },
+    "puntajeGlobal": "El puntaje global refleja el nivel integral de riesgo financiero en empresas manufactureras e industriales (0 = crítico, 100 = sólido). Un puntaje alto indica eficiencia en uso de activos, control de costos y liquidez estable; mientras que un puntaje bajo sugiere vulnerabilidad frente a márgenes estrechos, endeudamiento elevado y riesgos de iliquidez en ciclos productivos largos.",
+    "resumen": {
+      "liquidezBaja": "La liquidez es insuficiente y compromete la capacidad de atender obligaciones inmediatas, en un sector que demanda capital intensivo para sostener inventarios y procesos productivos.",
+      "endeudamientoAlto": "El alto endeudamiento limita la flexibilidad para inversión en modernización y aumenta la exposición a incrementos en tasas de interés o riesgos cambiarios.",
+      "rentabilidadBaja": "La rentabilidad neta se encuentra por debajo de los estándares industriales, lo que refleja debilidad en el control de costos o presión competitiva.",
+      "scoreBajo": "El puntaje global refleja vulnerabilidad financiera elevada y exposición a riesgos operativos, tecnológicos y de mercado.",
+      "sinRiesgos": "La empresa presenta un perfil financiero sólido, con liquidez adecuada, deuda controlada y márgenes que aseguran sostenibilidad operativa."
+    }
+  },
+  "construccion": {
+    "liquidez": {
+      "bajo": "Nivel alto de liquidez que refleja capacidad suficiente para cumplir compromisos de corto plazo y financiar avances de obra sin depender excesivamente de crédito. Este escenario brinda seguridad a contratistas y proveedores, aunque puede indicar capital ocioso si no se gestiona adecuadamente. Claves de revisión: confirmar que los recursos líquidos estén alineados con el cronograma de ejecución de proyectos y no permanezcan improductivos.",
+      "medio": "Liquidez en rango aceptable, suficiente para cubrir pasivos corrientes y sostener el ciclo normal de proyectos. Este nivel refleja una gestión adecuada de anticipos, desembolsos y cobros. Claves de revisión: evaluar sincronización entre flujos de caja de proyectos y plazos de pago a contratistas y proveedores.",
+      "alto": "Liquidez insuficiente que expone a la empresa a dificultades para cumplir obligaciones inmediatas, lo cual puede generar retrasos en la ejecución de proyectos o pérdida de confianza de los clientes. Claves de revisión: revisar la dependencia de líneas de crédito de corto plazo, la puntualidad en la facturación de avances de obra y la gestión de anticipos recibidos."
+    },
+    "endeudamiento": {
+      "bajo": "Nivel bajo de endeudamiento que refleja una posición conservadora y menor exposición a riesgos financieros. Esto fortalece la capacidad de negociación con clientes y bancos. Claves de revisión: analizar si la baja deuda limita la capacidad de apalancarse en proyectos de mayor escala.",
+      "medio": "Nivel moderado de endeudamiento que mantiene equilibrio entre deuda y patrimonio. Es sostenible siempre que los flujos de proyectos sean estables y predecibles. Claves de revisión: verificar estructura de plazos de deuda, exposición a variaciones de tasas de interés y cumplimiento de covenants financieros.",
+      "alto": "Nivel elevado de endeudamiento que incrementa la exposición a riesgos de liquidez y compromete la flexibilidad de la empresa en caso de retrasos en la ejecución de proyectos. Claves de revisión: revisar contratos de crédito ligados a proyectos, capacidad de refinanciación y dependencia de adelantos de clientes."
+    },
+    "rentabilidad": {
+      "bajo": "Margen neto alto que refleja eficiencia en la ejecución de proyectos y adecuada gestión de costos directos e indirectos. Este nivel constituye una ventaja competitiva en un sector donde los sobrecostos son frecuentes. Claves de revisión: confirmar que la rentabilidad no dependa de ingresos extraordinarios ni de revaluaciones puntuales.",
+      "medio": "Margen neto aceptable que asegura sostenibilidad operativa, aunque vulnerable a sobrecostos, retrasos en la ejecución o renegociaciones contractuales. Claves de revisión: revisar control presupuestal, políticas de compras y cumplimiento de cronogramas.",
+      "alto": "Margen neto bajo que refleja debilidades en la gestión de costos, sobrecostos recurrentes o baja capacidad de negociación en contratos. Esto puede comprometer la viabilidad de proyectos a largo plazo. Claves de revisión: analizar ejecución presupuestal, renegociar precios con proveedores y revisar la productividad de equipos de obra."
+    },
+    "ROA": {
+      "bajo": "Alto retorno sobre activos que demuestra eficiencia en el uso de equipos, maquinaria y recursos de capital. Este nivel refleja una operación productiva y controlada. Claves de revisión: validar que el retorno sea consistente en distintos proyectos y no producto de ingresos extraordinarios.",
+      "medio": "Retorno sobre activos aceptable, con margen de mejora en la utilización de maquinaria y gestión de inventarios de materiales. Claves de revisión: analizar utilización de capacidad instalada, eficiencia en la logística de obra y rotación de inventarios.",
+      "alto": "Bajo retorno sobre activos que indica subutilización de maquinaria, baja eficiencia en proyectos o inversiones improductivas. Claves de revisión: revisar planes de mantenimiento, productividad de activos fijos y rentabilidad de contratos vigentes."
+    },
+    "ROE": {
+      "bajo": "Excelente retorno sobre patrimonio que indica generación de valor para los accionistas y adecuada gestión de proyectos. Este escenario fortalece la confianza de inversionistas y entidades financieras. Claves de revisión: confirmar que el alto retorno no dependa exclusivamente de un nivel elevado de endeudamiento.",
+      "medio": "Retorno sobre patrimonio en línea con referencias sectoriales, suficiente para sostener confianza de socios y accionistas. Claves de revisión: analizar consistencia en resultados y políticas de distribución de utilidades.",
+      "alto": "Bajo retorno sobre patrimonio que refleja dificultades para generar valor en proyectos o problemas en la estructura de capital. Claves de revisión: revisar márgenes por contrato, estructura de financiamiento y estrategia de reinversión de utilidades."
+    },
+    "puntajeGlobal": "El puntaje global refleja el nivel integral de riesgo financiero en empresas de construcción e infraestructura (0 = crítico, 100 = sólido). Un puntaje alto indica liquidez suficiente, control de costos y rentabilidad sostenida, mientras que un puntaje bajo evidencia exposición a sobrecostos, dependencia de endeudamiento y riesgo de iliquidez en proyectos de largo plazo.",
+    "resumen": {
+      "liquidezBaja": "La liquidez es insuficiente para cubrir compromisos inmediatos, lo que aumenta el riesgo de retrasos en proyectos y tensiones con contratistas y proveedores.",
+      "endeudamientoAlto": "El endeudamiento elevado limita la flexibilidad financiera y expone a la empresa a riesgo de incumplimiento en caso de retrasos en la facturación o sobrecostos imprevistos.",
+      "rentabilidadBaja": "La rentabilidad neta es inferior a los promedios sectoriales, lo que refleja problemas en control de costos o baja capacidad de negociación contractual.",
+      "scoreBajo": "El puntaje global refleja una posición financiera vulnerable, con alto riesgo operativo y financiero que compromete la viabilidad de proyectos futuros.",
+      "sinRiesgos": "La empresa presenta un perfil financiero estable, con liquidez adecuada, endeudamiento manejable y márgenes consistentes que respaldan la sostenibilidad de los proyectos."
+    }
+  },
+  "financiera": {
+    "liquidez": {
+      "bajo": "Nivel de liquidez elevado que garantiza solidez para cumplir obligaciones inmediatas y responde a los estándares regulatorios (ej. coeficiente de cobertura de liquidez). Este escenario refleja seguridad financiera y confianza en el mercado. Claves de revisión: confirmar que los excedentes no generen baja rentabilidad por estar invertidos en activos poco productivos.",
+      "medio": "Liquidez adecuada en línea con requerimientos regulatorios y prácticas del sector. Este nivel asegura capacidad de respuesta frente a retiros de clientes y obligaciones financieras. Claves de revisión: evaluar calidad de activos líquidos y composición de portafolios a corto plazo.",
+      "alto": "Liquidez insuficiente que representa un riesgo crítico para entidades financieras, ya que limita la capacidad de cumplir con retiros y pagos inmediatos. Claves de revisión: analizar exposición a corridas de liquidez, calidad de activos líquidos y planes de contingencia establecidos por la administración."
+    },
+    "endeudamiento": {
+      "bajo": "Nivel bajo de endeudamiento que indica una estructura de financiamiento conservadora, aunque en el sector puede reflejar baja capacidad de expansión. Claves de revisión: analizar si el menor apalancamiento limita la generación de rentabilidad vía colocación de créditos.",
+      "medio": "Endeudamiento en rango esperado para el sector financiero, reflejando equilibrio entre pasivos captados y capital propio. Claves de revisión: revisar relación deuda/capital regulatorio y cumplimiento de los requerimientos mínimos de solvencia.",
+      "alto": "Endeudamiento elevado que incrementa la exposición al riesgo de solvencia y aumenta la vulnerabilidad ante incumplimientos de clientes o deterioro de cartera. Claves de revisión: revisar adecuación de capital, morosidad en créditos y suficiencia de provisiones."
+    },
+    "rentabilidad": {
+      "bajo": "Margen neto elevado que refleja una adecuada gestión de ingresos financieros, control de costos operativos y eficiencia en la colocación de créditos. Claves de revisión: confirmar que no dependa exclusivamente de coyunturas de tasas de interés o ingresos extraordinarios.",
+      "medio": "Margen neto en rango aceptable, suficiente para sostener operaciones, aunque sensible a variaciones en tasas de interés, morosidad o presiones regulatorias. Claves de revisión: revisar estructura de ingresos por comisiones y diversificación de fuentes de rentabilidad.",
+      "alto": "Margen neto bajo que refleja debilidad en eficiencia operativa o problemas en la gestión de cartera de créditos. Claves de revisión: analizar morosidad, provisiones, gastos de administración y estrategias de diversificación."
+    },
+    "ROA": {
+      "bajo": "Alto retorno sobre activos que refleja eficiencia en la colocación de recursos y una gestión efectiva del riesgo crediticio. Este desempeño es indicador de competitividad y estabilidad. Claves de revisión: confirmar que la rentabilidad provenga de operaciones recurrentes.",
+      "medio": "Retorno sobre activos aceptable, aunque con margen de mejora en eficiencia operativa y control de costos. Claves de revisión: analizar composición de activos productivos y calidad de la cartera.",
+      "alto": "Bajo retorno sobre activos que refleja debilidad en la generación de utilidades frente a los recursos administrados. Claves de revisión: revisar estrategias de colocación, eficiencia en costos y riesgos de cartera."
+    },
+    "ROE": {
+      "bajo": "Excelente retorno sobre patrimonio que refleja una gestión sólida y generación de valor sostenida para accionistas. Este nivel atrae inversión y fortalece la confianza del mercado. Claves de revisión: validar que la rentabilidad no se base en excesivo apalancamiento.",
+      "medio": "Retorno sobre patrimonio en línea con referencias sectoriales y suficiente para sostener expectativas de accionistas. Claves de revisión: revisar consistencia de utilidades y políticas de capitalización.",
+      "alto": "Bajo retorno sobre patrimonio que refleja debilidad en la gestión del capital propio o deterioro de ingresos financieros. Claves de revisión: analizar rentabilidad de productos, estrategias de inversión y gestión de dividendos."
+    },
+    "puntajeGlobal": "El puntaje global refleja el nivel integral de riesgo financiero en empresas financieras y de seguros (0 = crítico, 100 = sólido). Un puntaje alto indica cumplimiento regulatorio, liquidez estable y rentabilidad sostenida; un puntaje bajo refleja vulnerabilidad a choques de liquidez, incumplimientos crediticios y presiones regulatorias.",
+    "resumen": {
+      "liquidezBaja": "La liquidez insuficiente representa un riesgo inmediato de incumplimiento regulatorio y de pérdida de confianza en el mercado.",
+      "endeudamientoAlto": "El nivel de endeudamiento elevado incrementa la exposición al riesgo de insolvencia y limita la flexibilidad frente a cambios regulatorios o deterioro de cartera.",
+      "rentabilidadBaja": "La rentabilidad neta se encuentra por debajo del promedio sectorial, lo que refleja debilidad en gestión de cartera y eficiencia operativa.",
+      "scoreBajo": "El puntaje global refleja alta vulnerabilidad financiera y riesgo de incumplimiento normativo, con impacto en la estabilidad institucional.",
+      "sinRiesgos": "La entidad presenta un perfil financiero sólido, cumple con estándares regulatorios y sostiene márgenes adecuados para asegurar su sostenibilidad."
+    }
+  },
+  "startup": {
+    "liquidez": {
+      "bajo": "Liquidez elevada que otorga estabilidad para sostener operaciones y financiar crecimiento en el corto plazo. Este escenario reduce la dependencia inmediata de nuevas rondas de inversión. Claves de revisión: validar que la liquidez provenga de capital levantado o flujo operativo recurrente y que exista un plan de uso eficiente de los recursos.",
+      "medio": "Liquidez moderada que permite sostener operaciones básicas, aunque con riesgo de tensiones si se retrasan ingresos o nuevas rondas de capital. Claves de revisión: analizar proyecciones de caja, capacidad de generación de ingresos recurrentes y acceso a inversionistas.",
+      "alto": "Liquidez insuficiente que compromete la continuidad operativa y la capacidad de pagar gastos esenciales (nómina, proveedores). Este escenario eleva el riesgo de fracaso si no se consigue capital rápidamente. Claves de revisión: evaluar burn rate mensual, runway disponible y dependencias de financiación externa."
+    },
+    "endeudamiento": {
+      "bajo": "Nivel bajo de endeudamiento que refleja dependencia mínima del crédito y mayor uso de capital propio o inversionistas. Esto reduce el riesgo financiero, aunque puede limitar la escalabilidad en etapas de rápido crecimiento. Claves de revisión: confirmar que la ausencia de deuda no restrinja el aprovechamiento de oportunidades estratégicas.",
+      "medio": "Endeudamiento moderado que puede ser positivo si se destina a proyectos de expansión, siempre que los flujos futuros respalden su repago. Claves de revisión: analizar condiciones de financiamiento, sensibilidad a tasas y relación deuda/ingresos proyectados.",
+      "alto": "Endeudamiento elevado que expone a la startup a un riesgo crítico, especialmente si no ha alcanzado rentabilidad. Este escenario compromete la flexibilidad y puede limitar rondas de inversión futuras. Claves de revisión: revisar estructura de deuda, garantías otorgadas y coherencia con el plan de negocio."
+    },
+    "rentabilidad": {
+      "bajo": "Margen neto positivo y elevado, poco común en startups iniciales, que refleja eficiencia en monetización temprana. Esto constituye una ventaja competitiva y atrae inversionistas. Claves de revisión: confirmar sostenibilidad del modelo de ingresos y consistencia con la estrategia de crecimiento.",
+      "medio": "Margen neto cercano al equilibrio o moderadamente negativo, considerado aceptable en startups en fase de expansión. Claves de revisión: evaluar la relación entre pérdidas actuales y el crecimiento en usuarios, clientes o cuota de mercado.",
+      "alto": "Margen neto negativo elevado que refleja riesgo de insostenibilidad si se prolonga en el tiempo. Claves de revisión: revisar el burn rate, ajustar modelo de negocio y validar que las pérdidas estén alineadas con una estrategia de escalabilidad."
+    },
+    "ROA": {
+      "bajo": "Retorno sobre activos positivo que refleja eficiencia inusual en startups, donde los recursos generan utilidades tempranas. Este escenario es atractivo para inversionistas. Claves de revisión: confirmar que el retorno provenga de operaciones recurrentes y no de ingresos extraordinarios.",
+      "medio": "Retorno sobre activos bajo o cercano a cero, habitual en etapas de crecimiento donde la prioridad es expansión y no rentabilidad. Claves de revisión: revisar escalabilidad del modelo y eficiencia en la utilización de activos tecnológicos.",
+      "alto": "Retorno sobre activos negativo que refleja baja eficiencia en el uso de recursos y riesgo de destrucción de valor. Claves de revisión: evaluar estructura de costos, capacidad de monetización y estrategias de innovación."
+    },
+    "ROE": {
+      "bajo": "Alto retorno sobre patrimonio, poco común en startups iniciales, que refleja modelo rentable y eficiente. Este escenario aumenta el atractivo para inversionistas y refuerza la sostenibilidad. Claves de revisión: confirmar consistencia del modelo y sostenibilidad de utilidades.",
+      "medio": "Retorno bajo o negativo, considerado normal en startups mientras priorizan crecimiento sobre rentabilidad. Claves de revisión: analizar la relación entre pérdidas y expansión de cuota de mercado, así como expectativas de futuras rondas de inversión.",
+      "alto": "Retorno negativo elevado que refleja destrucción de valor para los accionistas y riesgo de inviabilidad a largo plazo. Claves de revisión: revisar estrategias de crecimiento, capacidad de escalabilidad y opciones de pivotaje del modelo de negocio."
+    },
+    "puntajeGlobal": "El puntaje global refleja el nivel integral de riesgo financiero en startups y empresas tecnológicas (0 = crítico, 100 = sólido). Un puntaje alto indica eficiencia temprana en monetización, liquidez adecuada y estructura de capital sana; un puntaje bajo refleja dependencia de inversionistas, márgenes negativos persistentes y riesgo de iliquidez por alto burn rate.",
+    "resumen": {
+      "liquidezBaja": "La liquidez insuficiente compromete la continuidad de la startup y expone a la empresa a depender exclusivamente de rondas de inversión externas.",
+      "endeudamientoAlto": "Un endeudamiento elevado en etapa temprana incrementa el riesgo de inviabilidad y reduce el atractivo frente a inversionistas.",
+      "rentabilidadBaja": "La rentabilidad negativa sostenida refleja un modelo de negocio aún no validado y aumenta la exposición al riesgo financiero.",
+      "scoreBajo": "El puntaje global refleja vulnerabilidad alta y riesgo de fracaso si no se logra levantar capital adicional o ajustar el modelo de negocio.",
+      "sinRiesgos": "La startup presenta un perfil financiero sólido, con liquidez suficiente, bajos niveles de deuda y un modelo rentable o en camino claro hacia la sostenibilidad."
+    }
+  },
+  "energia_agro": {
+    "liquidez": {
+      "bajo": "Nivel alto de liquidez que refleja capacidad suficiente para sostener operaciones intensivas en capital, cumplir compromisos de corto plazo y enfrentar choques de mercado. Este escenario ofrece resiliencia financiera, aunque puede evidenciar ineficiencia si los recursos permanecen ociosos. Claves de revisión: validar planes de reinversión en proyectos energéticos, agrícolas o de exploración, y confirmar que la liquidez se gestione de manera estratégica.",
+      "medio": "Liquidez en rango aceptable para respaldar operaciones corrientes y cumplir con obligaciones, aunque sensible a variaciones en flujos de caja derivados de precios de materias primas o temporadas agrícolas. Claves de revisión: analizar políticas de cobertura de riesgos de mercado, rotación de inventarios y plazos de cobro/pago en contratos internacionales.",
+      "alto": "Liquidez insuficiente que compromete la capacidad de financiar operaciones y atender obligaciones inmediatas en un sector que exige grandes desembolsos de capital. Este escenario aumenta la exposición a paradas de planta, incumplimientos contractuales o pérdida de competitividad. Claves de revisión: revisar acceso a financiamiento externo, dependencia de adelantos de clientes y planes de gestión de caja."
+    },
+    "endeudamiento": {
+      "bajo": "Nivel bajo de endeudamiento que refleja una posición conservadora con mayor independencia financiera. Esto reduce la exposición a variaciones de tasas de interés y fortalece la autonomía. Claves de revisión: evaluar si la baja deuda limita la capacidad de financiar proyectos estratégicos de expansión o innovación.",
+      "medio": "Nivel moderado de endeudamiento, manejable dentro de los estándares sectoriales, que permite apalancar proyectos de inversión. Claves de revisión: analizar condiciones contractuales, diversificación de fuentes de deuda y capacidad de cobertura de gastos financieros.",
+      "alto": "Endeudamiento elevado que incrementa la exposición a riesgos financieros, especialmente en escenarios de caída de precios internacionales o sequías. Este nivel limita la flexibilidad estratégica y aumenta la vulnerabilidad ante crisis externas. Claves de revisión: revisar planes de refinanciación, exposición a deuda en moneda extranjera y cumplimiento de covenants."
+    },
+    "rentabilidad": {
+      "bajo": "Margen neto elevado que refleja eficiencia operativa, control de costos y aprovechamiento de condiciones favorables del mercado. Este nivel fortalece la capacidad de inversión en innovación y sostenibilidad. Claves de revisión: confirmar que los márgenes no dependan únicamente de coyunturas internacionales de precios.",
+      "medio": "Margen neto aceptable que asegura sostenibilidad operativa, aunque vulnerable a fluctuaciones de precios de commodities, factores climáticos o costos de energía. Claves de revisión: revisar estrategias de cobertura de precios, contratos de largo plazo y políticas de diversificación.",
+      "alto": "Margen neto bajo que refleja presión en costos, caída de precios internacionales o debilidad en la estrategia comercial. Este nivel compromete la competitividad y la capacidad de reinversión. Claves de revisión: analizar estructura de costos, productividad y gestión de riesgos ambientales o regulatorios."
+    },
+    "ROA": {
+      "bajo": "Alto retorno sobre activos que refleja eficiencia en el uso de infraestructura, tierras, plantas y equipos intensivos en capital. Este nivel fortalece la resiliencia y competitividad. Claves de revisión: validar sostenibilidad del retorno frente a ciclos de mercado y confirmar que no provenga de ingresos extraordinarios.",
+      "medio": "Retorno aceptable que refleja un uso adecuado de los activos, aunque con oportunidades de mejora en eficiencia tecnológica y productiva. Claves de revisión: revisar productividad de tierras, uso de maquinaria y eficiencia energética.",
+      "alto": "Bajo retorno sobre activos que refleja ineficiencia en la utilización de recursos o inversiones improductivas. Claves de revisión: analizar obsolescencia tecnológica, subutilización de plantas o proyectos con baja rentabilidad."
+    },
+    "ROE": {
+      "bajo": "Excelente retorno sobre patrimonio que refleja creación de valor para los accionistas, eficiencia operativa y adecuada gestión financiera. Claves de revisión: asegurar que el desempeño sea sostenible frente a la volatilidad de precios y riesgos regulatorios.",
+      "medio": "Retorno sobre patrimonio en línea con los promedios del sector, suficiente para sostener confianza de socios e inversionistas. Claves de revisión: analizar consistencia en utilidades, políticas de dividendos y reinversión.",
+      "alto": "Bajo retorno sobre patrimonio que refleja problemas en la rentabilidad de operaciones o en la estructura de capital. Claves de revisión: revisar estrategia comercial, diversificación de productos y sostenibilidad de utilidades."
+    },
+    "puntajeGlobal": "El puntaje global refleja el nivel integral de riesgo financiero en empresas de energía, minería y agroindustria (0 = crítico, 100 = sólido). Un puntaje alto indica resiliencia frente a volatilidad de precios, liquidez adecuada y márgenes sostenibles; un puntaje bajo refleja vulnerabilidad a choques externos, altos niveles de endeudamiento o ineficiencia en el uso de activos.",
+    "resumen": {
+      "liquidezBaja": "La liquidez insuficiente compromete la capacidad de sostener operaciones intensivas en capital y aumenta la exposición a choques externos de mercado.",
+      "endeudamientoAlto": "El alto endeudamiento limita la flexibilidad financiera y aumenta la vulnerabilidad ante caídas de precios internacionales o crisis regulatorias.",
+      "rentabilidadBaja": "La rentabilidad neta es inferior a los promedios sectoriales, lo que refleja presión en costos y pérdida de competitividad.",
+      "scoreBajo": "El puntaje global refleja una posición financiera vulnerable, con riesgos elevados asociados a volatilidad de precios, clima y regulaciones.",
+      "sinRiesgos": "La empresa presenta un perfil sólido, con liquidez suficiente, niveles de deuda manejables y márgenes competitivos que respaldan sostenibilidad y crecimiento."
+    }
+  }
+}

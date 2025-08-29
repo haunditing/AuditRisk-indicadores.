@@ -1,0 +1,183 @@
+{
+  "calculos": {
+    "liquidez": "(analisis.balance.activoCorriente) / (analisis.balance.pasivoCorriente)",
+    "endeudamiento": "(analisis.balance.pasivoCorriente + analisis.balance.pasivoNoCorriente) / (analisis.balance.activoCorriente + analisis.balance.activoNoCorriente)",
+    "rentabilidad": "(analisis.resultados.utilidadNeta) / (analisis.resultados.ingresos)",
+    "ROA": "(analisis.resultados.utilidadNeta) / (analisis.balance.activoCorriente + analisis.balance.activoNoCorriente)",
+    "ROE": "(analisis.resultados.utilidadNeta) / (analisis.balance.patrimonio)"
+  },
+
+  "indicadoresMeta": {
+    "liquidez": { "esPorcentaje": false, "riesgoPorExceso": true },
+    "endeudamiento": { "esPorcentaje": true, "riesgoPorExceso": true },
+    "rentabilidad": { "esPorcentaje": true, "riesgoPorExceso": false },
+    "ROA": { "esPorcentaje": true, "riesgoPorExceso": false },
+    "ROE": { "esPorcentaje": true, "riesgoPorExceso": false },
+    "coberturaDeuda": { "esPorcentaje": false, "riesgoPorExceso": true }
+  },
+
+  "tiposEmpresa": [
+    {
+      "id": "comercial_servicios",
+      "nombre": "Empresas Comerciales y de Servicios",
+      "estandares": {
+        "liquidez": {
+          "min": 1.2,
+          "max": 2.0,
+          "fuente": "FullRatio – Retail/Servicios 2025"
+        },
+        "endeudamiento": {
+          "max": 0.5,
+          "fuente": "Eqvista – Promedio retail 2025"
+        },
+        "rentabilidad": {
+          "min": 0.05,
+          "max": 0.15,
+          "fuente": "Statista – Margen neto sector retail 2024"
+        },
+        "ROA": {
+          "min": 0.03,
+          "fuente": "Investopedia – Retail benchmarks 2024"
+        },
+        "ROE": {
+          "min": 0.08,
+          "fuente": "Investopedia – Retail benchmarks 2024"
+        }
+      }
+    },
+    {
+      "id": "manufactura",
+      "nombre": "Empresas Manufactureras e Industriales",
+      "estandares": {
+        "liquidez": {
+          "min": 1.5,
+          "max": 2.5,
+          "fuente": "FullRatio – Manufacturing companies 2025"
+        },
+        "endeudamiento": {
+          "max": 0.6,
+          "fuente": "Eqvista – Debt-to-equity Manufacturing 2025"
+        },
+        "rentabilidad": {
+          "min": 0.08,
+          "max": 0.2,
+          "fuente": "Statista – Profit margins Industrials 2024"
+        },
+        "ROA": {
+          "min": 0.05,
+          "fuente": "Investopedia – Industrial benchmarks 2024"
+        },
+        "ROE": {
+          "min": 0.12,
+          "fuente": "Investopedia – Industrial benchmarks 2024"
+        }
+      }
+    },
+    {
+      "id": "construccion",
+      "nombre": "Empresas de Construcción e Infraestructura",
+      "estandares": {
+        "liquidez": {
+          "min": 1.5,
+          "fuente": "JMCO – Benchmarks construcción 2025"
+        },
+        "endeudamiento": {
+          "max": 2.0,
+          "fuente": "JMCO – Construction debt ratios 2025"
+        },
+        "rentabilidad": {
+          "min": 0.1,
+          "max": 0.25,
+          "fuente": "McKinsey – Construction profitability 2024"
+        },
+        "ROA": { "min": 0.04, "fuente": "McKinsey – Construction KPIs 2024" },
+        "ROE": { "min": 0.1, "fuente": "McKinsey – Construction KPIs 2024" }
+      }
+    },
+    {
+      "id": "financiera",
+      "nombre": "Empresas Financieras y Seguros",
+      "estandares": {
+        "liquidez": {
+          "min": 1.0,
+          "fuente": "Basilea III – Liquidity Coverage Ratio 2025"
+        },
+        "endeudamiento": {
+          "max": 0.9,
+          "fuente": "Investopedia – Banking sector debt 2025"
+        },
+        "rentabilidad": {
+          "min": 0.1,
+          "max": 0.3,
+          "fuente": "World Bank – Financial institutions margins 2024"
+        },
+        "ROA": { "min": 0.01, "fuente": "IMF – Banking profitability 2025" },
+        "ROE": { "min": 0.08, "fuente": "IMF – Banking profitability 2025" }
+      }
+    },
+    {
+      "id": "startup",
+      "nombre": "Startups y Empresas Tecnológicas",
+      "estandares": {
+        "liquidez": {
+          "variable": true,
+          "fuente": "CBInsights – Tech Startups KPIs 2025"
+        },
+        "endeudamiento": {
+          "max": 0.4,
+          "fuente": "Crunchbase – Tech capital structure 2024"
+        },
+        "rentabilidad": {
+          "negativoPermitido": true,
+          "fuente": "PwC – Tech startup profitability 2024"
+        },
+        "ROA": {
+          "variable": true,
+          "fuente": "PwC – Tech startup benchmarks 2024"
+        },
+        "ROE": {
+          "variable": true,
+          "fuente": "PwC – Tech startup benchmarks 2024"
+        }
+      }
+    },
+    {
+      "id": "energia_agro",
+      "nombre": "Empresas de Energía, Minería y Agroindustria",
+      "estandares": {
+        "liquidez": { "min": 1.5, "fuente": "FullRatio – Energy sector 2025" },
+        "endeudamiento": {
+          "max": 0.7,
+          "fuente": "Investopedia – Oil & Gas Debt Ratios 2025"
+        },
+        "rentabilidad": {
+          "min": 0.15,
+          "max": 0.4,
+          "fuente": "Statista – Energy & Mining margins 2024"
+        },
+        "ROA": { "min": 0.08, "fuente": "McKinsey – Energy/Mining KPIs 2024" },
+        "ROE": { "min": 0.12, "fuente": "McKinsey – Energy/Mining KPIs 2024" }
+      }
+    },
+    {
+      "id": "sector_publico",
+      "nombre": "Sector Público y Empresas Estatales",
+      "estandares": {
+        "liquidez": {
+          "min": 1.0,
+          "fuente": "OCDE – Benchmarks sector público 2024"
+        },
+        "endeudamiento": {
+          "max": 1.0,
+          "fuente": "World Bank – Public enterprises debt 2025"
+        },
+        "rentabilidad": {
+          "min": 0.01,
+          "fuente": "OCDE – Public sector profitability 2024"
+        },
+        "ROA": { "min": 0.01, "fuente": "OCDE – Public sector KPIs 2024" },
+        "ROE": { "min": 0.02, "fuente": "OCDE – Public sector KPIs 2024" }
+      }
+    }
+  ]
+}
